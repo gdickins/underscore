@@ -6,7 +6,8 @@ import personPost from './views/person';
 const Router = Backbone.Router.extend({
   routes: {
     blog       : 'blogFunction',
-    person     : 'personFunction'
+    person     : 'personFunction',
+    '*path'    : 'blogFunction'
   },
   blogFunction: function() {
     console.log('blog');

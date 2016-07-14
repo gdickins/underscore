@@ -23,7 +23,7 @@ function personPost() {
     });
     person.save(null, {
       success: function() {
-        router.navigate('personForm', {trigger: true});
+        router.navigate('person', {trigger: true});
       }
     });
   });
